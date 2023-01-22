@@ -1,6 +1,6 @@
 import React from "react";
 
-export class Homes extends React.Component {
+export class Home extends React.Component {
 
 
   render() {
