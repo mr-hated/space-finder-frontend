@@ -43,14 +43,16 @@ export class Spaces extends Component<SpacesProps, SpacesState> {
           reserveSpace={this.reserveSpace}
         />
       )
-    } 
+    }
+    return rows;
   }
 
   render() {
-    return 
+    return (
     <div>
       <h2>Welcome to the Spaces page!</h2>
       {this.renderSpaces()}
     </div>
+    )
   }
 }
