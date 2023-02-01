@@ -3,6 +3,7 @@ import genericImage from '../../assets/generic-image.jpg';
 import './SpaceComponent.css';
 
 interface SpaceComponentProps {
+  key: string,
   spaceId: string,
   name: string,
   location: string,
@@ -16,7 +17,7 @@ export class SpaceComponent extends Component <SpaceComponentProps> {
     if(this.props.photoUrl){
       return <img src={this.props.photoUrl} alt='' />
     } else {
-      return <img src={genericImage} alt=''/ >
+      return <img src={genericImage} alt='' />
     }
   }
 
